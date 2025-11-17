@@ -78,18 +78,19 @@ In your README.md there should be five sections:
 For example:
 
 
-# stor-664-project-sample
+# STOR-664-MLBSalaryAnalysis-Group 2
 
 ## Team Members
-- Member 1 (@user1)
-- Member 2 (@user2)
-- Member 3 (@user3)
-- Member 4 (@user4)
+- Mark Cahill (markbaconcahill)
+- Jack McPherson (jackrymc)
+- Gabriel Sargent (GabrielSargent)
+- Hanieh Jamshidian (hanijamshidian)
 
 ## Overview
-This repository contains the group project for [STOR 664, Fall 2025].  
-Our goal is to ... using data ... and methods ....
-Results show ...
+This repository contains the group project for STOR 664, Fall 2025.
+Our goal is to build a linear regression model to predict MLB player salaries using key hitting statistics such as batting average, home runs, and RBIs. We test whether each statistic has a significant effect on salary (H₀: βᵢ = 0) and compare their relative importance (H₀: βᵢ > βⱼ) using partial R² values. If time allows, we will repeat the analysis for individual teams to see how these relationships differ across teams.
+
+We use Sean Lahman’s Baseball Database, combining the salaries, batting, pitching, and master datasets through playerID. Our analysis covers 1985–2015, and we exclude pitchers because their hitting performance is not usually tied to their salary.
 
 ## Repository Structure
 | Folder | Purpose | Key Files |
