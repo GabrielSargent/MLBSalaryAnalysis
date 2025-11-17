@@ -13,6 +13,8 @@ Our goal is to build a linear regression model to predict MLB player salaries us
 
 We use Sean Lahman’s Baseball Database, combining the salaries, batting, pitching, and master datasets through playerID. Our analysis covers 1985–2015, and we exclude pitchers because their hitting performance is not usually tied to their salary.
 
+In Part 1, we aim to clearly define our research question, specify our null hypotheses, identify and prepare our dataset, review related literature, produce an initial exploratory figure, address data quality and wrangling concerns, and outline the analysis plan we will follow for the project.
+
 ## Repository Structure
 | Folder | Purpose | Key Files |
 |---------|----------|-----------|
