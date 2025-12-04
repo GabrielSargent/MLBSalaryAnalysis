@@ -4,7 +4,7 @@ data <- read.csv("./data/processed/data_with_prop.csv")
 #Do log transform on max salary ratio
 data[,"log_max_sal_ratio"] <- log(data$max_sal_prop)
 
-#Fit a linear model using Walks, Strikeouts, singles, RBI, OPS, and intentional walks.
+#Fit a linear model using Walks, Strikeouts, stolen bases, RBI, OPS, and intentional walks.
 #This is based on the previous VIF analysis
 fit <- lm(log_max_sal_ratio ~ BB+SO+SB+RBI+OPS+IBB, data = data)
 #The R summary tests the significance of each individual predictor, as well
@@ -12,7 +12,6 @@ fit <- lm(log_max_sal_ratio ~ BB+SO+SB+RBI+OPS+IBB, data = data)
 (fit_summary <- summary(fit))
 write.csv(fit_summary$coefficients, "./results/Model/fit_summary.csv")
 plot(fit)
-
 #Some functions from the hw to help with the F test
 find_beta <- function(X, y){
   Xqr <- qr(X)

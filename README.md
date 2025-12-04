@@ -16,21 +16,21 @@ We use Sean Lahman’s Baseball Database, combining the salaries, batting, pitch
 In Part 1, we aim to clearly define our research question, specify our null hypotheses, identify and prepare our dataset, review related literature, produce an initial exploratory figure, address data quality and wrangling concerns, and outline the analysis plan we will follow for the project.
 
 ## Repository Structure
-| Folder | Purpose | Key Files |
+| Folder | Purpose |
 |---------|----------|-----------|
-| `/data/raw` | Original unmodified datasets | `data1.csv`, `data2.csv` |
-| `/data/processed` | Cleaned datasets ready for analysis | `merged_data.rds` |
-| `/src` | Analysis and visualization code | `02_fit_models.R`, `03_generate_figures.R` |
-| `/results/tables` | Numeric summaries | `model_performance.csv` |
-| `/results/figures` | Visual outputs | `figure1.png` |
-| `/report` | All written deliverables | `01_introduction.md`, `final_report.qmd` |
+| `/data/raw` | Original unmodified datasets |
+| `/data/processed` | Cleaned datasets ready for analysis |
+| `/src` | Analysis and visualization code |
+| `/results/tables` | Numeric summaries |
+| `/results/figures` | Visual outputs |
+| `/report` | All written deliverables |
 
 ## Getting Started
 ### 1. Clone the repository
 
 ```bash
-git clone <your .git url>
-cd stor-664-project-sample
+git clone https://github.com/GabrielSargent/MLBSalaryAnalysis.git
+cd MLBSalaryAnalysis
 ```
 
 ### 2. Install dependencies (optional but highly recommended)
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ### 3. Running Analysis Scripts
 ```r
-Rscript scripts/03_generate_figures.R
+Rscript src/01_data_cleaning_EDA.R
 ```
 
 ---
