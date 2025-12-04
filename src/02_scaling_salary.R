@@ -15,7 +15,7 @@ for(i in 1:nrow(data)){
   max_sal_prop[i] <- data$salary[i]/max_sal
 }
 data$max_sal_prop <- max_sal_prop # Add it to our dataset
-write.csv(data, file = "./data/processed/data_with_prop.csv")# Export it
+write.csv(data, file = "./data/processed/data_with_prop.csv", row.names = F)# Export it
 
 # Notice that if we plot salary against year, the mean and variance of the salaries grow over time
 plot(data$yearID, data$salary, main = "Salaries by year", xlab = "year", ylab = "salaries ($)")

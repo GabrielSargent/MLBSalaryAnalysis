@@ -103,7 +103,7 @@ head(total)
 total <- total[-2997,]
 
 #Write out cleaned data.
-write.csv(total, "data/processed/data.csv")
+write.csv(total, "data/processed/data.csv", row.names = F)
 
 
 ###########################
